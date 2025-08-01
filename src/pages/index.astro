@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+---
+
+<Layout>
+  <!-- Hero -->
+  <section class="text-center py-24 bg-gradient-to-b from-white to-gray-100">
+    <h1 class="text-5xl font-bold mb-4 text-gray-900">Bem-vindo à <span class="text-blue-600">SuperInova (ou flow)</span></h1>
+    <p class="text-lg text-gray-600 mb-8">Um navegador feito para quem estuda, com foco, organização e acessibilidade.</p>
+    <a href="#recursos" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition">Saiba mais</a>
+    <img src="/Assets/heroo.png" alt="Notebook" class="mx-auto mt-16 w-[600px] drop-shadow-2xl rotate-2" width="400" />
+  </section>
+
+  <!-- Recursos -->
+
+  <section id="recursos" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12">O que oferecemos?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <img src="/assets/icon-note.svg" alt="" class="w-12 h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Bloco de Notas</h3>
+          <p class="text-gray-600">Tome notas enquanto estuda, com salvamento automático e organização por abas.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <img src="/assets/icon-timer.svg" alt="" class="w-12 h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Pomodoro</h3>
+          <p class="text-gray-600">Gerencie seu tempo com ciclos de foco e pausas curtas para manter a produtividade.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <img src="/assets/icon-lock.svg" alt="" class="w-12 h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Ambiente sem distrações</h3>
+          <p class="text-gray-600">Modo escuro, bloqueio de anúncios e tradutor de páginas para uma navegação fluida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-blue-600 py-20 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Pronto para estudar com mais foco?</h2>
+    <p class="mb-6 text-lg">Experimente agora o navegador feito sob medida para estudantes.</p>
+    <a href="/download" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-gray-200 transition">Baixar Agora</a>
+  </section>
+</Layout>
